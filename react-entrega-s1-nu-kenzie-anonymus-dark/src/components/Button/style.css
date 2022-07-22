@@ -1,0 +1,56 @@
+.smallButton, .bigButton, .smallSizeGray{
+    box-sizing: border-box;
+
+    width: auto;
+    height: auto;
+
+    outline: 0;
+    border: none;
+    border-radius: 8px;
+}
+
+.smallButton{
+    padding: 10.5px 15px;
+
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 14px
+}
+
+.bigButton{
+    padding: 14.5px 111.5px;
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px
+}
+
+.smallButton, .bigButton{
+    transition: 300ms;
+    background-color: #FD377E;
+    color: #FFFFFF;
+}
+
+.smallButton:hover, .bigButton:hover{
+    transition: 300ms;
+    background-color: #E34981;
+    color: #F8F9FA;
+}
+
+.smallSizeGray{
+    transition: 300ms;
+    background-color: #E9ECEF;
+    color: #343A40;
+
+    padding: 10.5px 15px;
+
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 14px
+}
+
+.smallSizeGray:hover{
+    transition: 300ms;
+    background-color: #343A40;
+    color: #F8F9FA;
+}
