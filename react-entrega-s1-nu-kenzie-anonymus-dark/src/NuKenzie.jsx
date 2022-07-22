@@ -1,8 +1,9 @@
 import Login from "./components/Login";
+import Header from "./components/Header";
 
 import { useState } from 'react'
 
-import './css/NuKenzie.css';
+import './css/homePage.css';
 import './css/Login.css'
 
 function NuKenzie() {
@@ -14,13 +15,14 @@ function NuKenzie() {
     <>
       {
         isLogged ?
-          <div className="NuKenzie">
-
+          <div className="homePage">
+            <Header setIsLogged={setIsLogged}/>
+        
           </div>
         :
-        <div className="Login">
-          <Login setIsLogged={setIsLogged}/>
-        </div>
+          <div className="Login">
+            <Login setIsLogged={setIsLogged}/>
+          </div>
       }
     </>
   );
