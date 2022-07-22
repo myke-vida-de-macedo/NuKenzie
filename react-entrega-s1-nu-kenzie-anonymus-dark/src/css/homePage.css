@@ -1,5 +1,30 @@
 .homePage {
   width: 100%;
   height: 100vh;
-  background-color: #FFFFFF
+
+  background-color: #FFFFFF;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.homePage__block{
+  width: auto;
+  height: auto;
+
+  margin: 39px 0px 0px 0px;
+
+  display: flex;
+}
+
+@media (min-width:400px){
+  .homePage__block{
+    margin: 39px 15px 0px 15px;
+  }
+}
+
+@media (min-width:500px){
+  .homePage__block{
+    margin: 39px 8% 0px 8%;
+  }
 }
