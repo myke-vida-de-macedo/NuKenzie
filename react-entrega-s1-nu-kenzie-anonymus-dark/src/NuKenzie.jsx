@@ -1,6 +1,7 @@
 import Login from "./components/Login";
 import Header from "./components/Header";
 import Form from "./components/Form";
+import Filtro from "./components/Filtro"
 
 import { useState } from 'react'
 
@@ -20,12 +21,14 @@ function NuKenzie() {
             <Header setIsLogged={setIsLogged}/>
 
             <div className="homePage__block">
-              <div>
+              <div lassName="homePag__form">
                 <Form/>
               </div>
-        
-              <div>
-                
+
+              <div className="homePag__sessao">
+
+                  <Filtro/>
+
               </div>
             </div>
 
