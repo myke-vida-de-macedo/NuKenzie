@@ -1,0 +1,69 @@
+.Login__prohibited{
+    width: 100%;
+    min-width: 300px;
+    max-width: 347px;
+    height: auto;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 10px;
+  }
+  
+  @media (min-width:350px){
+    .Login__prohibited{
+      align-items: flex-start;
+    }
+  }
+  
+  @media (min-width:1000px){
+    .Login__prohibited{
+      margin: 24px;
+    }
+  }
+  
+  .prohibited__logo{
+    display: flex;
+    align-self: flex-start;
+    margin: 15.47px 0px;
+  }
+  
+  
+  .prohibited__description-1{
+    font-family: 'Nunito', sans-serif;
+    font-size: 32px;
+    font-weight: 800; 
+  
+    color: #FFFFFF;
+  
+    text-align:left;
+    line-height: 48px;
+  
+    margin: 15px 0px;
+  }
+  
+  .prohibited__description-2{
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+  
+    color: #FFFFFF;
+  
+    margin: 13px 13px 28px 0px;
+  } 
+
+
+  .Login__image{
+    display: none;
+    margin: 24px;
+  }
+  
+  
+  @media (min-width:1000px){
+    .Login__image{
+      display: unset;
+      margin: 24px;
+    }
+  }

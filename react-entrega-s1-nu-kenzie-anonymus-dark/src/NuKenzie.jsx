@@ -1,4 +1,4 @@
-import Button from './components/Button';
+import Login from "./components/Login";
 
 import { useState } from 'react'
 
@@ -18,9 +18,9 @@ function NuKenzie() {
 
           </div>
         :
-          <div className="Login">
-            
-          </div>
+        <div className="Login">
+          <Login setIsLogged={setIsLogged}/>
+        </div>
       }
     </>
   );
