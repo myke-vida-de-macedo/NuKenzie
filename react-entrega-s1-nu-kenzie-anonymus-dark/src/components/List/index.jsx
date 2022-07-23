@@ -3,7 +3,7 @@ import "./style.css"
 import semConteudo from "../../NoCard.png"
 import Card from "../Card"
 
-export default function List({data}){
+export default function List({data, setData, valueUpadate}){
 
     return(
 
@@ -21,7 +21,7 @@ export default function List({data}){
                 <>
                     
                     {
-                        data.map( ( card, key )=> <Card key={key} description={card.description} type={card.type} value={card.value}/> )
+                        data.map( ( card, key )=> <Card key={card.id} id={card.id} description={card.description} type={card.type} value={card.value} setData={setData} valueUpadate={valueUpadate}/> )
                     }
 
                 </>
