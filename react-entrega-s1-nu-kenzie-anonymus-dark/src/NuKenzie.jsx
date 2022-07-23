@@ -14,15 +14,24 @@ function NuKenzie() {
 
   const [ isLogged, setIsLogged ] = useState(false)
 
-  const [ data, setData ] = useState([{description:"Salário - Mês Dezembro", type:"Entrada", value:"R$ 6.660,00"},{description:"Salário - Mês Dezembro", type:"Etrada", value:"R$ 6.660,00"}])
+  const [ data, setData ] = useState([])
 
-  const [ value, setVelue ] = useState(0)
+  const [ value, setValue ] = useState(0)
 
-  function updateValue(){
+  const [ id, setId ] = useState(0)
+  
+  function valueUpadate( newData ){
 
-    const soma = data.reduce( ( acumulador, atual ) => acumulador + atual.value ,0)
+      const soma = newData.reduce( ( acumulador, atual ) =>{
+        if( atual.type === "Entrada"){
+          return acumulador + Number( atual.value )
+        }
+        if( atual.type === "Despesas"){
+          return acumulador - Number( atual.value )
+        }
+      } ,0)
 
-    setVelue( soma )
+      setValue( soma )
   }
 
   return (
@@ -35,7 +44,7 @@ function NuKenzie() {
 
             <div className="homePage__block">
               <div lassName="homePag__form">
-                <Form/>
+                <Form setData={setData} data={data} setId={setId} valueUpadate={valueUpadate}/>
 
                 <TotalMoney data={data} value={value}/>
               </div>
@@ -44,7 +53,7 @@ function NuKenzie() {
 
                   <Filtro/>
 
-                  <List data={data}></List>
+                  <List data={data} setData={setData} valueUpadate={valueUpadate}></List>
               </div>
             </div>
 
