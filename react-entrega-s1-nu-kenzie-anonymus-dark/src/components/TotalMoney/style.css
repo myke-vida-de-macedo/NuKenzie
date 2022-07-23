@@ -1,0 +1,60 @@
+.blockAllValue{
+    box-sizing: border-box;
+
+    width: 100%;
+    min-width: 300px;
+    max-width: 363px;
+    height: 96px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border: 1px solid #E9ECEF;
+    border-radius: 4px;
+
+    margin-top: 16px;
+    padding: 20px 24px;
+}
+
+@media (min-width:400px){
+    .blockAllValue{ 
+        min-width: 363px;
+    }
+}
+
+
+.blockAllValue__information{
+
+}
+
+.information__title{
+    font-family: 'Nunito', sans-serif;
+    font-size: 16;
+    font-weight: 700;
+
+    color: #212529;
+}
+
+.information__description{
+    font-family: 'Nunito', sans-serif;
+    font-size: 12;
+    font-weight: 400;
+
+    color: #343A40;
+}
+
+.blockAllValue__block{  
+    width: auto;
+    height: 100%;
+
+    font-family: 'Nunito', sans-serif;
+    font-size: 16;
+    font-weight: 700;
+
+    color: #FD377E;
+}
+
+.block__allValue{
+
+}

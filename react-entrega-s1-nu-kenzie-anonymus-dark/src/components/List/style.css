@@ -1,0 +1,22 @@
+.sessao{
+    width: 100%;
+    
+    padding: 0px 5px;
+
+    text-align: center;
+
+}
+
+.sessao__titulo{
+
+}
+
+.sessao__imagem{
+    display: none;
+}
+
+@media( min-width:1120px){
+    .sessao__imagem{
+        display: unset;
+    }
+}
