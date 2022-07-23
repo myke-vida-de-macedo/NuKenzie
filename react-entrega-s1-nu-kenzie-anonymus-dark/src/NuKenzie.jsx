@@ -16,6 +16,8 @@ function NuKenzie() {
 
   const [ data, setData ] = useState([])
 
+  const [ filtro, setFiltro ] = useState([])
+
   const [ value, setValue ] = useState(0)
 
   const [ id, setId ] = useState(0)
@@ -51,9 +53,9 @@ function NuKenzie() {
 
               <div className="homePag__sessao">
 
-                  <Filtro/>
+                  <Filtro data={data} setFiltro={setFiltro} valueUpadate={valueUpadate}/>
 
-                  <List data={data} setData={setData} valueUpadate={valueUpadate}></List>
+                  <List data={data} filtro={filtro} setData={setData} valueUpadate={valueUpadate} setFiltro={setFiltro}></List>
               </div>
             </div>
 

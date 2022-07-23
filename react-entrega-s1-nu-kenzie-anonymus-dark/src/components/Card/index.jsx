@@ -2,7 +2,7 @@ import { FaTrash } from "react-icons/fa"
 
 import "./style.css"
 
-export default function Card({description, type, value, setData, id, valueUpadate }) {
+export default function Card({description, type, value, setData, id, valueUpadate, setFiltro }) {
 
     function removeCard( event ){
 
@@ -10,6 +10,15 @@ export default function Card({description, type, value, setData, id, valueUpadat
         
         if( id != "" ){
             setData( data => {
+
+                const newData = data.filter( card => card.id != id )
+
+                valueUpadate(newData)
+
+                return newData 
+
+            } )
+            setFiltro( data => {
 
                 const newData = data.filter( card => card.id != id )
 
