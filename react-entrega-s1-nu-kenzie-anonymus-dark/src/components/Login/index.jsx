@@ -1,3 +1,6 @@
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import Button from "../Button"
 
 import imagemLogin from '../../loginImage.svg'
@@ -8,6 +11,8 @@ import "./style.css"
 export default function Login({ setIsLogged }){
 
     function logar(){
+
+        toast.success("Bem Vindo")
 
         setIsLogged(true)
     }

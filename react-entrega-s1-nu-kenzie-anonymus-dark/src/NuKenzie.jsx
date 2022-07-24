@@ -7,6 +7,9 @@ import TotalMoney from "./components/TotalMoney";
 
 import { useState } from 'react'
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import './css/homePage.css';
 import './css/Login.css'
 
@@ -37,10 +40,22 @@ function NuKenzie() {
   }
 
   return (
-
-    <>
+    
+    <>  
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+/>
       {
         isLogged ?
+          
           <div className="homePage">
             <Header setIsLogged={setIsLogged}/>
 

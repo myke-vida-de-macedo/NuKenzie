@@ -1,3 +1,6 @@
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import { FaTrash } from "react-icons/fa" 
 
 import "./style.css"
@@ -13,6 +16,8 @@ export default function Card({description, type, value, setData, id, valueUpadat
         }
 
         if( id != "" ){
+
+            toast.success("Gerenciamento excluido")
 
             setData( data => {
 
