@@ -14,7 +14,7 @@ export default function Header({setIsLogged}){
     return(
         <header className="cabecalho">
             <img className="cabecalho__logo" src={logo} alt="Logo" />
-            <Button onClick={comeBackLogin} smallSizeGray type="button">Inicio</Button>
+            <Button onClick={comeBackLogin} smallSize type="button">Inicio</Button>
         </header>
     )
 }

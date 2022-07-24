@@ -55,8 +55,8 @@ export default function Filtro({ data, setFiltro, valueUpadate }){
 
             <nav onClick={enderFilter} className="filtro__navegacao">
                 <Button smallSize>Todos</Button>
-                <Button smallSizeGray>Entradas</Button>
-                <Button smallSizeGray>Despesas</Button>
+                <Button smallSize>Entradas</Button>
+                <Button smallSize>Despesas</Button>
             </nav>
         </div>
     )
