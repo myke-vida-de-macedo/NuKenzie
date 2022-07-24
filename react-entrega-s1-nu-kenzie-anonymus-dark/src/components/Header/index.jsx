@@ -13,8 +13,10 @@ export default function Header({setIsLogged}){
 
     return(
         <header className="cabecalho">
-            <img className="cabecalho__logo" src={logo} alt="Logo" />
-            <Button onClick={comeBackLogin} smallSize type="button">Inicio</Button>
+            <div className="centralizacao">
+                <img className="cabecalho__logo" src={logo} alt="Logo" />
+                <Button onClick={comeBackLogin} smallSize type="button">Inicio</Button>
+            </div>
         </header>
     )
 }
