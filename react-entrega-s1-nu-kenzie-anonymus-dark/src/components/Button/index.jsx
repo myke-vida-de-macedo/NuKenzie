@@ -5,6 +5,6 @@ import './style.css'
 export default function Button({ type, children, smallSize, smallSizeGray, onClick }){
 
     return(
-        <button className={ smallSize && !smallSizeGray ? "smallButton" : smallSizeGray ? "smallSizeGray" : "bigButton" } onClick={onClick} type={type}>{ children }</button>
+        <button className={ smallSize ? "smallButton" : "bigButton" } onClick={onClick} type={type}>{ children }</button>
     )
 }
