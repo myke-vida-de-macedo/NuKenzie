@@ -23,11 +23,11 @@ export default function List({data, filtro, setData, valueUpadate, setFiltro}){
                     {   
                         filtro == 0 ?
 
-                        data.map( ( card )=> <Card key={card.id} id={card.id} description={card.description} type={card.type} value={card.value} setData={setData} valueUpadate={valueUpadate} setFiltro={setFiltro}/> )
+                        data.map( ( card )=> <Card key={card.id} id={card.id} description={card.description} type={card.type} value={card.value} setData={setData} valueUpadate={valueUpadate} setFiltro={setFiltro} filtro={filtro}/> )
 
                         :
 
-                        filtro.map( ( card )=> <Card key={card.id} id={card.id} description={card.description} type={card.type} value={card.value} setData={setData} valueUpadate={valueUpadate} setFiltro={setFiltro}/> )
+                        filtro.map( ( card )=> <Card key={card.id} id={card.id} description={card.description} type={card.type} value={card.value} setData={setData} valueUpadate={valueUpadate} setFiltro={setFiltro} filtro={filtro}/> )
                     }
 
                 </>

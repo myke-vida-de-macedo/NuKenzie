@@ -45,7 +45,7 @@ function NuKenzie() {
             <Header setIsLogged={setIsLogged}/>
 
             <div className="homePage__block">
-              <div lassName="homePag__form">
+              <div className="homePag__form">
                 <Form setData={setData} data={data} setId={setId} valueUpadate={valueUpadate}/>
 
                 <TotalMoney data={data} value={value}/>

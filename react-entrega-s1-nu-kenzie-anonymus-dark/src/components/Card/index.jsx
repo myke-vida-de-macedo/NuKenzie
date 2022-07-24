@@ -2,13 +2,18 @@ import { FaTrash } from "react-icons/fa"
 
 import "./style.css"
 
-export default function Card({description, type, value, setData, id, valueUpadate, setFiltro }) {
+export default function Card({description, type, value, setData, id, valueUpadate, setFiltro, filtro }) {
 
     function removeCard( event ){
 
-        const id = event.nativeEvent.path[3].id
-        
+        let id = event.target.id
+
+        if(  event.target.tagName === 'path' ){
+            id = event.nativeEvent.path[2].id   
+        }
+
         if( id != "" ){
+
             setData( data => {
 
                 const newData = data.filter( card => card.id != id )
@@ -22,7 +27,10 @@ export default function Card({description, type, value, setData, id, valueUpadat
 
                 const newData = data.filter( card => card.id != id )
 
-                valueUpadate(newData)
+                if( newData != 0 ){
+
+                    valueUpadate(newData)
+                }
 
                 return newData 
 
@@ -38,7 +46,7 @@ export default function Card({description, type, value, setData, id, valueUpadat
                 <span className="information__type">{type}</span>
             </div>
             <p className="card__value">{value}</p>
-            <button onClick={removeCard} className="card__botao">
+            <button id={id} onClick={removeCard} className="card__botao">
                 <FaTrash/>
             </button>
         </div>
