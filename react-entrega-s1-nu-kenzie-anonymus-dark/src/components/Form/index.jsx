@@ -1,3 +1,6 @@
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import Button from "../Button"
 
 import "./style.css"
@@ -28,6 +31,9 @@ export default function Form({setData, data, setId, valueUpadate}){
         })
 
         if( Object.values( newObj ) != 0 ){
+            
+            toast.success("Gerenciamento criado")
+
             setData(( previusObj => {
 
                 valueUpadate([...previusObj, newObj])

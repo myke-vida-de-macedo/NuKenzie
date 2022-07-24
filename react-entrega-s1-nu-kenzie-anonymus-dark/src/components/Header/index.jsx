@@ -1,3 +1,6 @@
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import Button from "../Button"
 
 import logo from '../../logoBlack.svg'
@@ -7,6 +10,8 @@ import "./style.css"
 export default function Header({setIsLogged}){
 
     function comeBackLogin(){
+
+        toast.success("Volte sempre")
 
         setIsLogged(false)
     }
