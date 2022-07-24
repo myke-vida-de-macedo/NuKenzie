@@ -1,0 +1,125 @@
+.labelAll, .formulario__ex{
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.labelAll{
+    display: flex;
+    color: #212529;
+}
+
+.formulario{
+    box-sizing: border-box;
+
+    width: 100%;
+    min-width: 300px;
+    max-width: 363px;
+    height: 351px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid #E9ECEF;
+    border-radius: 4px;
+}
+
+@media (min-width:400px){
+    .formulario{ 
+        min-width: 363px;
+    }
+}
+
+.formulario__descriptionName{
+    width: 80%;
+    min-width: 314px;
+}
+
+.formulario__description{
+    box-sizing: border-box;
+
+    width: 80%;
+    min-width: 314px;
+    height: 52.8px;
+    
+    border: none;
+    border-radius: 8px;
+
+    background-color: #F8F9FA;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+
+    padding: 13.4px 16px;
+    margin: 12.1px 0px 4.4px 0px;
+    outline: 0;
+}
+
+.formulario__ex{
+    color: #868E96;
+
+    width: 80%;
+    min-width: 314px;
+
+    margin-bottom: 17.7px;
+}
+
+.organize{
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 19px;
+}
+
+.formulario__blockValues{
+    box-sizing: border-box;
+
+    width: 80%;
+    min-width: 314px;
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.blockValues__valor{
+    box-sizing: border-box;
+
+    width: 128px;
+    height: 48px;
+    
+    border: none;
+    outline: 0;
+    padding: 11px 32px 11px 16px;
+    margin-top: 9px;
+
+    background-color: #F8F9FA;
+    background-image: url(../../R$.png);
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+}
+
+.blockValues__blockType{
+    box-sizing: border-box;
+
+    width: 150px;
+    max-width: 150px;
+    height: 48px;
+    
+    border: none;
+    outline: 0;
+    padding: 11px;
+    margin-top: 9px;
+
+    background-color: #F8F9FA;
+    color:#343A40;
+
+    border-radius: 8px;
+}
